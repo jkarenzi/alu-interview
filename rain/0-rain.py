@@ -8,9 +8,9 @@ def rain(walls):
 
     total_water = 0
     # Stores the maximum wall height to the left of each position
-    left_max = [0] * len(walls)  
+    left_max = [0] * len(walls)
     # Stores the maximum wall height to the right of each position
-    right_max = [0] * len(walls)  
+    right_max = [0] * len(walls)
     # Calculate the maximum wall height to the left of each position
     left_max[0] = walls[0]
     for i in range(1, len(walls)):
