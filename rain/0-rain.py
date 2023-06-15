@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""alu-interview"""
+
 def rain(walls):
     if not walls:  # If the list is empty, return 0
         return 0
