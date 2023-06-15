@@ -1,14 +1,16 @@
 #!/usr/bin/python3
 """alu-interview"""
 
+
 def rain(walls):
     if not walls:  # If the list is empty, return 0
         return 0
 
     total_water = 0
-    left_max = [0] * len(walls)  # Stores the maximum wall height to the left of each position
-    right_max = [0] * len(walls)  # Stores the maximum wall height to the right of each position
-
+    # Stores the maximum wall height to the left of each position
+    left_max = [0] * len(walls)  
+    # Stores the maximum wall height to the right of each position
+    right_max = [0] * len(walls)  
     # Calculate the maximum wall height to the left of each position
     left_max[0] = walls[0]
     for i in range(1, len(walls)):
